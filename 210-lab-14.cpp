@@ -14,11 +14,11 @@ private:
     int blueVal;
 public: 
     int getRedVal()              { return redVal; }
-    void setRedVal(int r)        {redVal = r; }
+    void setRedVal(int r)        { redVal = r; }
     int getGreenVal()            { return greenVal; }
-    void setGreenVal(int g)      {greenVal = g; }
+    void setGreenVal(int g)      { greenVal = g; }
     int getBlueVal()             { return blueVal; }
-    void setBlueVal(int b)       {blueVal = b; }
+    void setBlueVal(int b)       { blueVal = b; }
 
     void print() { 
         cout << "Color Code: " << "R = " << redVal << " , G = " << greenVal << " , B = " << blueVal << endl; 
