@@ -21,10 +21,33 @@ public:
     void setBlueVal(int b)       {blueVal = b; }
 
     void print() { 
-        cout << "Color Code: " << "R = " << redVal << " ,G = " << greenVal << " ,B = " << blueVal << endl; 
+        cout << "Color Code: " << "R = " << redVal << " , G = " << greenVal << " , B = " << blueVal << endl; 
     }
 };
 
 int main() { 
+    vector<Color> colorVector; 
+    Color color1; 
+    color1.setRedVal(50); 
+    color1.setGreenVal(120);
+    color1.setBlueVal(155);
+    colorVector.push_back(color1); 
+
+    Color color2; 
+    color2.setRedVal(176);
+    color2.setGreenVal(232);
+    color2.setBlueVal(0);
+    colorVector.push_back(color2); 
+
+    Color color3; 
+    color3.setRedVal(127); 
+    color3.setGreenVal(98);
+    color3.setBlueVal(45);
+    colorVector.push_back(color3); 
+
+    for (auto color : colorVector) { 
+        color.print(); 
+    }
+
     return 0;
 }
