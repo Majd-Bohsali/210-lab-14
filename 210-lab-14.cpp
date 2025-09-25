@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-const int W15 = 15, SIZE = 5;
+const int W10 = 10, SIZE = 5;
 
 class Color {
 private:
@@ -19,6 +19,10 @@ public:
     void setGreenVal(int g)      {greenVal = g; }
     int getBlueVal()             { return blueVal; }
     void setBlueVal(int b)       {blueVal = b; }
+
+    void print() { 
+        cout << "Color Code: " << "R = " << redVal << " ,G = " << greenVal << " ,B = " << blueVal << endl; 
+    }
 };
 
 int main() { 
