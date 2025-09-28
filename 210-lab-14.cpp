@@ -1,11 +1,8 @@
 // COMSC210 | Lab 14 | Majd Bohsali
-// IDE used: Visual Studi Code
+// IDE used: Visual Studio Code
 
 #include <iostream>
-#include <vector>
 using namespace std;
-
-const int W10 = 10, SIZE = 5;
 
 class Color {
 private:
@@ -26,28 +23,23 @@ public:
 };
 
 int main() { 
-    vector<Color> colorVector; 
     Color color1; 
     color1.setRedVal(50); 
     color1.setGreenVal(120);
     color1.setBlueVal(155);
-    colorVector.push_back(color1); 
+    color1.print();
 
     Color color2; 
     color2.setRedVal(176);
     color2.setGreenVal(232);
     color2.setBlueVal(0);
-    colorVector.push_back(color2); 
+    color2.print();
 
     Color color3; 
     color3.setRedVal(127); 
     color3.setGreenVal(98);
     color3.setBlueVal(45);
-    colorVector.push_back(color3); 
-
-    for (auto color : colorVector) { 
-        color.print(); 
-    }
+    color3.print();
 
     return 0;
 }
